@@ -10,8 +10,8 @@ M.general = {
     ["<C-n>"] = { ":cnext<CR>", "quickfix next"},
     ["<C-p>"] = { ":cprev<CR>", "quickfix previous"},
 
-    ["<C-RIGHT>"] = { "<cmd> virtical resize-5 <CR>", "resize-5"},
-    ["<C-LEFT>"] = { "<cmd> virtical resize+5 <CR>", "resize+5"},
+    ["<C-RIGHT>"] = { "<cmd> vertical resize-5 <CR>", "resize-5"},
+    ["<C-LEFT>"] = { "<cmd> vertical resize+5 <CR>", "resize+5"},
     ["<C-UP>"] = { "<cmd> res-5 <CR>", "res-5"},
     ["<C-DOWN>"] = { "<cmd> res+5 <CR>", "res+5"}
   },
