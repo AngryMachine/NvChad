@@ -13,4 +13,4 @@ for _, lsp in ipairs(servers) do
 end
 
 -- additional settings
-require("custom.configs.lspconfig.rust").on_setup()
+require("custom.configs.lspconfig.rust")

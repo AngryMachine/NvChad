@@ -53,6 +53,7 @@ local plugins = {
 
   {
     "kevinhwang91/nvim-bqf",
+    lazy = false,
     config = function()
       require "custom.configs.bqf"
     end,
@@ -72,6 +73,7 @@ local plugins = {
 
   {
     "ten3roberts/qf.nvim",
+    lazy = false,
     config = function()
         require'qf'.setup{}
     end
@@ -95,10 +97,14 @@ local plugins = {
     end,
   },
 
+  -- {
+  --   "mrcjkb/rustaceanvim",
+  --   version = '^4',
+  --   lazy = false,
+  -- },
+
   {
-    "mrcjkb/rustaceanvim",
-    version = '^4',
-    lazy = false,
+    "simrat39/rust-tools.nvim",
   },
 
   {
@@ -136,7 +142,8 @@ local plugins = {
     config = function()
       require "custom.configs.cscope"
     end
-  }
+  },
+
 }
 
 
