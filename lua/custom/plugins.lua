@@ -25,6 +25,7 @@ local plugins = {
 
   {
     "hedyhli/outline.nvim",
+    lazy = false,
     config = function()
       require "custom.configs.outline"
     end,
@@ -123,6 +124,19 @@ local plugins = {
     end
   },
 
+  {
+    "dhananjaylatkar/cscope_maps.nvim",
+    enable = false,
+    dependencies = {
+      "folke/which-key.nvim", -- optional [for whichkey hints]
+      "nvim-telescope/telescope.nvim", -- optional [for picker="telescope"]
+      "ibhagwan/fzf-lua", -- optional [for picker="fzf-lua"]
+      "nvim-tree/nvim-web-devicons", -- optional [for devicons in telescope or fzf]
+    },
+    config = function()
+      require "custom.configs.cscope"
+    end
+  }
 }
 
 
