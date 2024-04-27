@@ -97,14 +97,11 @@ local plugins = {
     end,
   },
 
-  -- {
-  --   "mrcjkb/rustaceanvim",
-  --   version = '^4',
-  --   lazy = false,
-  -- },
-
+  -- "simrat39/rust-tools.nvim",
   {
-    "simrat39/rust-tools.nvim",
+    "mrcjkb/rustaceanvim",
+    version = '^4',
+    lazy = false,
   },
 
   {

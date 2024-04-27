@@ -18,11 +18,7 @@ local options = {
   },
 }
 
-require("rust-tools").setup({
+vim.g.rustaceanvim = {
+  -- LSP configuration
   server = options,
-})
-
--- vim.g.rustaceanvim = {
---   -- LSP configuration
---   server = options,
--- }
+}
