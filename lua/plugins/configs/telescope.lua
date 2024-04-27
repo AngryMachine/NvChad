@@ -21,6 +21,7 @@ local options = {
       horizontal = {
         prompt_position = "top",
         preview_width = 0.55,
+        results_width = 0.8,
       },
       vertical = {
         mirror = false,
@@ -45,10 +46,27 @@ local options = {
     buffer_previewer_maker = require("telescope.previewers").buffer_previewer_maker,
     mappings = {
       n = { ["q"] = require("telescope.actions").close },
+      i = {
+        ["<C-j>"] = "move_selection_next",
+        ["<C-k>"] = "move_selection_previous",
+        ["<Down>"] = "move_selection_next",
+        ["<Up>"] = "move_selection_previous",
+        ["<C-n>"] = "cycle_history_next",
+        ["<C-p>"] = "cycle_history_prev",
+        ["<C-c>"] = "close",
+        ["<C-u>"] = "preview_scrolling_up",
+        ["<C-d>"] = "preview_scrolling_down",
+      },
     },
   },
 
-  extensions_list = { "themes", "terms" },
+  extensions = {
+    recent_files = {
+      only_cwd = true,
+    }
+  },
+
+  extensions_list = { "themes", "terms", "recent_files" },
 }
 
 return options
