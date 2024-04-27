@@ -4,8 +4,8 @@ M.general = {
   n = {
     ["sv"] = {":vsp<CR>", "open window v"},
     ["sh"] = {":sp<CR>", "open window h"},
-    ["sc"] = {":<C-w>c", "close current window"},
-    ["so"] = {":<C-w>o", "close other windows"},
+    ["sc"] = {"<C-w>c", "close current window"},
+    ["so"] = {"<C-w>o", "close other windows"},
 
     ["<C-n>"] = { ":cnext<CR>", "quickfix next"},
     ["<C-p>"] = { ":cprev<CR>", "quickfix previous"},
@@ -72,6 +72,12 @@ M.search_replace = {
     ["rbW"] = { "<cmd>SearchReplaceMultiBufferCWORD<CR>", "[W]ORD" },
     ["rbe"] = { "<cmd>SearchReplaceMultiBufferCExpr<CR>", "[e]xpr" },
     ["rbf"] = { "<cmd>SearchReplaceMultiBufferCFile<CR>", "[f]ile" },
+  },
+}
+
+M.outline = {
+  n = {
+    ["<leader>o"] = { "<cmd> Outline <CR>", "Outline"},
   },
 }
 
