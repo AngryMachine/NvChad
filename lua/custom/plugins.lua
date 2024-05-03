@@ -32,6 +32,14 @@ local plugins = {
   },
 
   {
+    "Mr-LLLLL/interestingwords.nvim",
+    lazy = false,
+    config = function()
+      require "custom.configs.interestingwords"
+    end,
+  },
+
+  {
     "kdheepak/lazygit.nvim",
     lazy = false,
     -- optional for floating window border decoration
