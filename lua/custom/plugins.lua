@@ -60,6 +60,17 @@ local plugins = {
   },
 
   {
+    "nvim-lualine/lualine.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require "custom.configs.lualine"
+    end,
+  },
+
+  {
     "kevinhwang91/nvim-bqf",
     lazy = false,
     config = function()

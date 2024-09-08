@@ -30,6 +30,7 @@ M.hop = {
   n = {
     ["hl"] = {"<cmd> HopLine <CR>", "HopLine"},
     ["hc"] = {"<cmd> HopWordCurrentLine <CR>", "HopWordCurrentLine"},
+    ["hw"] = {"<cmd> HopWord <CR>", "HopWord"},
   },
   v = {
     ["hl"] = {"<cmd> HopLine <CR>", "HopLine"},
